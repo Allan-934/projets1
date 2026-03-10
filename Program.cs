@@ -82,6 +82,15 @@ public class Course // Exercice 3
     {
         string obligatoire = this.isMandatory ? "Oui" : "Non";
         Console.WriteLine($"Nom : {name}, Crédits : {credits}, obligatoire : {obligatoire}, Nombre d'élèves :{students.Count}");
+
+        if (students.Count > 0) // Exercice 8 pas finis 
+        {
+            Console.WriteLine("List of Students:"); 
+            foreach (Student s in students)
+            {
+                Console.WriteLine($"- [ID {s.id}] {s.Name}")
+            }
+        }
     }
 }
 
